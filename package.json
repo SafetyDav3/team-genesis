@@ -1,0 +1,30 @@
+{
+  "name": "team-genesis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SafteyDav3/team-genesis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SafteyDav3/team-genesis/issues"
+  },
+  "homepage": "https://github.com/SafteyDav3/team-genesis#readme",
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  }
+}
