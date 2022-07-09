@@ -14,7 +14,7 @@ test("Creates Manager...", () => {
 test("Fetching Office Number from 'Manager'.", () => {
     // Create a new Manager
     const manager = new Manager("Barry Jones", 1, "barryjones@who.com", 8);
-    const managerOfficeNum = manager.officeNumber;
+    const managerOfficeNum = manager.fetchOfficeNumber();
 
     expect(managerOfficeNum).toBe(8);
 });

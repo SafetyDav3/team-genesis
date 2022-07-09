@@ -12,25 +12,29 @@ test("Create Employee...", () => {
 test("Checks to make sure saves employee name", () => {
     // Testing the Employee Class Object for "fetchName".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
+    const employeeName = employee.fetchName()
 
-    expect(employee.fetchName).toBe("Mike Jones");
+    expect(employeeName).toBe("Mike Jones");
 });
 
 test("Checks for employee 'Id'", () => {
     // Testing the Employee Class Object for "fetchId".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
+    const employeeId = employee.fetchId()
 
-    expect(employee.fetchId).toBe("id");
+    expect(employeeId).toBe("id");
 });
 test("Checks for employee email.", () => {
     // Testing the Employee Class Object for "fetchEmail".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
+    const employeeEmail = employee.fetchEmail()
 
-    expect(employee.fetchEmail).toBe("mikejones@who.com");
+    expect(employeeEmail).toBe("mikejones@who.com");
 });
 test("Checks to make sure role is 'employee'", () => {
     // Testing the Employee Class Object for "fetchRole".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
+    const employeeRole = employee.fetchRole()
 
-    expect(employee.fetchRole).toBe("Employee");
+    expect(employeeRole).toBe("Employee");
 });
