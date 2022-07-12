@@ -10,31 +10,31 @@ test("Create Employee...", () => {
     expect(employee.email).toBe("mikejones@who.com");
 });
 test("Checks to make sure saves employee name", () => {
-    // Testing the Employee Class Object for "fetchName".
+    // Testing the Employee Class Object for "getName".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
-    const employeeName = employee.fetchName()
+    const employeeName = employee.getName()
 
     expect(employeeName).toBe("Mike Jones");
 });
 
 test("Checks for employee 'Id'", () => {
-    // Testing the Employee Class Object for "fetchId".
+    // Testing the Employee Class Object for "getId".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
-    const employeeId = employee.fetchId()
+    const employeeId = employee.getId()
 
     expect(employeeId).toBe("id");
 });
 test("Checks for employee email.", () => {
-    // Testing the Employee Class Object for "fetchEmail".
+    // Testing the Employee Class Object for "getEmail".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
-    const employeeEmail = employee.fetchEmail()
+    const employeeEmail = employee.getEmail()
 
     expect(employeeEmail).toBe("mikejones@who.com");
 });
 test("Checks to make sure role is 'employee'", () => {
-    // Testing the Employee Class Object for "fetchRole".
+    // Testing the Employee Class Object for "getRole".
     const employee = new Employee("Mike Jones", "id", "mikejones@who.com");
-    const employeeRole = employee.fetchRole()
+    const employeeRole = employee.getRole()
 
     expect(employeeRole).toBe("Employee");
 });

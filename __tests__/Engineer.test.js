@@ -14,7 +14,7 @@ test("Creates Engineer...", () => {
 test("Fetching Github profile from 'Engineer'.", () => {
     // Create a new Engineer
     const engineer = new Engineer("Gary Jones", 1, "garyjones@who.com", "whoHub");
-    const engineerGithub = engineer.fetchGithub();
+    const engineerGithub = engineer.getGithub();
 
     expect(engineerGithub).toBe("whoHub");
 });
@@ -22,7 +22,7 @@ test("Fetching Github profile from 'Engineer'.", () => {
 test("Testing to make sure employee role is 'Engineer'.", () => {
     // Create a new Engineer
     const engineer = new Engineer("Gary Jones", 1, "garyjones@who.com", "whoHub");
-    const engineerRole = engineer.fetchRole();
+    const engineerRole = engineer.getRole();
 
     expect(engineerRole).toBe("Engineer");
 });

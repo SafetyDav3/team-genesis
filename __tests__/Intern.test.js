@@ -14,7 +14,7 @@ test("Creates Intern...", () => {
 test("Fetching School attended from 'Intern'.", () => {
     // Create a new Intern
     const intern = new Intern("Jerry Jones", 1, "jerryjones@who.com", "UWGB");
-    const internSchool = intern.fetchSchool();
+    const internSchool = intern.getSchool();
 
     expect(internSchool).toBe("UWGB");
 });
@@ -22,7 +22,7 @@ test("Fetching School attended from 'Intern'.", () => {
 test("Testing to make sure employee role is 'Intern'.", () => {
     // Create a new Intern
     const intern = new Intern("Jerry Jones", 1, "jerryjones@who.com", "UWGB");
-    const internRole = intern.fetchRole();
+    const internRole = intern.getRole();
 
     expect(internRole).toBe("Intern");
 });
