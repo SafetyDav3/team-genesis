@@ -1,19 +1,19 @@
 // Dependencies 
-const inquirer = require("inquirer");
-const fs = require("fs");
+import inquirer from 'inquirer';
+import fs from 'fs';
 
 // Employee models
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const Manager = require("./lib/Manager");
+import Engineer from "./lib/Engineer.js";
+import Intern from "./lib/Intern.js";
+import Manager from "./lib/Manager.js";
 
 // Internal dependencies 
-const html = require("./src/generateHTML");
+import html from "./src/generateHTML.js";
 
 // Path for content
-const path = require("path");
-const distPath = path.resolve(__dirname, "dist");
-const createHTML = path.join(distPath, "index.html");
+import path from "path";
+// const distPath = path.resolve(__dirname, "dist");
+const createHTML = path.join("./dist/index.html");
 
 // Array to save generated employees
 const employees = [];

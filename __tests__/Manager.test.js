@@ -1,5 +1,5 @@
 // Importing Manager Class Object
-const Manager = require("../lib/Manager");
+import Manager from "../lib/Manager";
 
 test("Creates Manager...", () => {
     // Create a new Manager

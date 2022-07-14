@@ -1,26 +1,29 @@
 const teamCards = (teamArry) => {
-  const cardArry = [];
-
-  const managerCard = (manager) => {
-    return;
-`
+    
+    const managerCard = (manager) => {
+    return`
 <div class="card" style="width: 18rem">
-  <div class="card-body">
+<div class="card-body">
     <h5 class="card-title">${manager.getName()}</h5>
     <h5 class="card-title"><i class="fa-solid fa-mug-hot"/>${manager.getRole()}</h5>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">${manager.getId()}/li>
-    <li class="list-group-item">${manager.getEmail()}</li> →→→→→→ Make email link
-    <li class="list-group-item">${manager.getOfficeNumber()}</li>
-  </ul>
-</div>`;
-  };
+    </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">ID: ${manager.getId()}/li>
+    <li class="list-group-item">Email: ${manager.getEmail()}</li> →→→→→→ Make email link
+    <li class="list-group-item">Office Number: ${manager.getOfficeNumber()}</li>
+    </ul>
+    </div>`;
 };
 
-module.exports = (teamArry) => {
-  return;
-  `<html lang="en">
+const cardArry = [];
+  cardArry.push(
+    teamArry
+      .filter((manager) => manager.getRole() === "Manager")
+      .map((manager) => managerCard(manager))
+  );
+
+  return`
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -44,12 +47,18 @@ module.exports = (teamArry) => {
 
     <main>
       <section class="container">
-
+        ${cardArry.join("")}
       </section>
     </main>
   </body>
 </html>`;
+  
+  
+  ;
 };
+
+export default teamCards;
+ 
 
 // Font Awesome icons:
 // Coffee Mug: fa-solid fa-mug-hot

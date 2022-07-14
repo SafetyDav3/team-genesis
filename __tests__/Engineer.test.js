@@ -1,5 +1,5 @@
 // Importing Engineer Class Object
-const Engineer = require("../lib/Engineer");
+import Engineer from "../lib/Engineer";
 
 test("Creates Engineer...", () => {
     // Create a new Engineer

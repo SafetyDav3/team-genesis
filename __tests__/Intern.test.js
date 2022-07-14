@@ -1,5 +1,5 @@
 // Importing Intern Class Object
-const Intern = require("../lib/Intern");
+import Intern from "../lib/Intern";
 
 test("Creates Intern...", () => {
     // Create a new Intern

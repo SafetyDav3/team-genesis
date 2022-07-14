@@ -1,5 +1,5 @@
 // Importing Employee Class Object
-const Employee = require("../lib/Employee");
+import Employee from "../lib/Employee";
 
 test("Create Employee...", () => {
     // Testing the Employee Class Object for name, id, and email.

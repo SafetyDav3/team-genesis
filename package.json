@@ -6,6 +6,7 @@
   "directories": {
     "lib": "lib"
   },
+  "type": "module",
   "scripts": {
     "test": "jest",
     "watch": "nodemon index.js"
